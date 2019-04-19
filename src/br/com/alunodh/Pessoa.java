@@ -10,4 +10,30 @@ public class Pessoa {
         this.RG = RG;
     }
 
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public Integer getRG() {
+        return RG;
+    }
+
+    public void setRG(Integer RG) {
+        this.RG = RG;
+    }
+
+    @Override
+    public boolean equals(Object outroPessoa) {
+        if (((Pessoa) outroPessoa).getRG() == this.getRG()) {
+            return true;
+
+        }
+
+return false;
+    }
+
 }
